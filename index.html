@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+        }
+
+        select {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="choose-color">
+        <label for="color">Select a color:</label>
+        <select id="color" onchange="changecolor()">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="black">Black</option>
+        </select>
+
+    </div>
+    <div class="button">
+        <button onclick="addrows()">Add Row</button>
+        <button onclick="addcols()">Add Columns</button>
+        <button onclick="remrows()">Remove Row</button>
+        <button onclick="remcols()">Remove Columns</button>
+        <button onclick="filluncolor()">Fill Uncolored</button>
+        <button onclick="fillall()">Fill All</button>
+        <button onclick="clearall()">Clear All</button>
+    </div>
+
+    <table id="grid">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
